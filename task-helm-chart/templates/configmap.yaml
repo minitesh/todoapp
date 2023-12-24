@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  MYSQL_DATABASE: tododb
+  MYSQL_HOST: tododb-service.nsp-todoapp.svc.cluster.local
+  MYSQL_PASSWORD: P@ssword
+  MYSQL_USER: root
+kind: ConfigMap
+metadata:
+  name: dbconfig
+  namespace: {{ .Values.namespace }}
